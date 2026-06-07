@@ -1,0 +1,61 @@
+// Team members. To add a real photo, set `photo` to an imported image
+// (e.g. import azad from '../assets/azad.jpg') and pass it in here.
+export const team = [
+  {
+    initials: 'AKA',
+    role: 'Principal Investigator',
+    roleClass: 'pi',
+    name: 'Prof. Dr. Md Abul Kalam Azad',
+    aff: ['Professor, Dept. of CSE,', 'Jahangirnagar University'],
+    lead: true,
+    photo: null,
+  },
+  {
+    initials: 'SB',
+    role: 'Co-PI · 1',
+    roleClass: 'copi',
+    name: 'Ms. Sarnali Basak',
+    aff: ['Associate Professor, Dept. of CSE,', 'Jahangirnagar University'],
+    photo: null,
+  },
+  {
+    initials: 'SR',
+    role: 'Co-PI · 2',
+    roleClass: 'copi',
+    name: 'Dr. Md. Shamsur Rahman',
+    aff: ['Chief Medical Officer (CMO),', 'Medical Center, JU'],
+    photo: null,
+  },
+  {
+    initials: 'RAD',
+    role: 'Research Assistant',
+    roleClass: '',
+    name: 'Rakib Ahmed Diptho',
+    aff: ['Dept. of CSE,', 'Jahangirnagar University'],
+    photo: null,
+  },
+  {
+    initials: 'SHC',
+    role: 'Research Assistant',
+    roleClass: '',
+    name: 'Safiul Haque Chowdhury',
+    aff: ['Dept. of CSE,', 'Jahangirnagar University'],
+    photo: null,
+  },
+  {
+    initials: 'MAAM',
+    role: 'Masters Research Student',
+    roleClass: '',
+    name: 'Md. Abdullah Al Mamun',
+    aff: ['Dept. of CSE,', 'Jahangirnagar University'],
+    photo: null,
+  },
+  {
+    initials: 'SH',
+    role: 'Masters Research Student',
+    roleClass: '',
+    name: 'Md. Shakhawat Hosen',
+    aff: ['Dept. of CSE,', 'Jahangirnagar University'],
+    photo: null,
+  },
+];
