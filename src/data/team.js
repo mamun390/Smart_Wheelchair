@@ -38,7 +38,7 @@ export const team = [
     initials: 'RAD',
     role: 'Research Assistant',
     roleClass: 'RA',
-    name: 'Rakib Ahmed Diptho',
+    name: 'Rakib Ahammed Diptho',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
     photo: rakib,
   },
