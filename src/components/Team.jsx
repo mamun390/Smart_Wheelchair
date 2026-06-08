@@ -2,20 +2,23 @@ import { team } from '../data/team.js';
 
 export default function Team() {
   const investigators = team.filter(
-    (m) => m.roleClass === 'pi' || m.roleClass === 'copi'
+    (m) => m.roleClass === 'Pi' || m.roleClass === 'CoPi'
   );
 
   const assistants = team.filter(
-    (m) => m.roleClass === 'ra'
+    (m) => m.roleClass === 'RA'
   );
 
   const students = team.filter(
-    (m) => m.roleClass === 'student'
+    (m) => m.roleClass === 'Student'
   );
 
   const renderMembers = (members) =>
     members.map((m) => (
-      <div className={`member${m.lead ? ' lead' : ''}`} key={m.name}>
+      <div
+        className={`member${m.lead ? ' lead' : ''}`}
+        key={m.name}
+      >
         <div className="m-photo">
           {m.photo ? (
             <img src={m.photo} alt={m.name} />
@@ -25,9 +28,7 @@ export default function Team() {
         </div>
 
         <div className="m-body">
-          <span
-            className={`m-role${m.roleClass ? ' ' + m.roleClass : ''}`}
-          >
+          <span className={`m-role ${m.roleClass}`}>
             {m.role}
           </span>
 
@@ -48,7 +49,6 @@ export default function Team() {
   return (
     <section className="section-pad bg-paper" id="team">
       <div className="wrap">
-
         <div className="sec-head reveal">
           <span className="eyebrow">People</span>
           <h2>The implementing team.</h2>
@@ -58,6 +58,7 @@ export default function Team() {
           </p>
         </div>
 
+        {/* Principal Investigator & Co-PIs */}
         <div className="team-section">
           <h3 className="group-title">
             Principal Investigator & Co-Investigators
@@ -68,6 +69,7 @@ export default function Team() {
           </div>
         </div>
 
+        {/* Research Assistants */}
         <div className="team-section">
           <h3 className="group-title">
             Research Assistants
@@ -78,6 +80,7 @@ export default function Team() {
           </div>
         </div>
 
+        {/* Master's Students */}
         <div className="team-section">
           <h3 className="group-title">
             Master's Research Students
@@ -87,7 +90,6 @@ export default function Team() {
             {renderMembers(students)}
           </div>
         </div>
-
       </div>
     </section>
   );
