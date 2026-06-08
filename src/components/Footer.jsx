@@ -1,6 +1,8 @@
 import juLogo from '../assets/ju_logo.png';
 import adbLogo from '../assets/adb_logo.png';
 import icsetepLogo from '../assets/icsetep_header.png';
+import ugclogo from '../assets/ugc.png';
+import gov from '../assets/gov.jpeg';
 
 export default function Footer() {
   return (
@@ -44,10 +46,12 @@ export default function Footer() {
               <span>Asian Development Bank (ADB)</span>
             </div>
             <div className="fblk">
+              <img src={gov} alt="GoV of BD" />
               <span>Government of Bangladesh (GoB)</span>
             </div>
-            <div className="fblk icsetep-wrap">
-              <img src={icsetepLogo} alt="ICSETEP / UGC" />
+            <div className="fblk">
+              <img src={ugclogo} alt="UGC" />
+              <span>University Grants Commission</span>
             </div>
           </div>
         </div>
