@@ -1,45 +1,93 @@
 import { team } from '../data/team.js';
 
 export default function Team() {
+  const investigators = team.filter(
+    (m) => m.roleClass === 'pi' || m.roleClass === 'copi'
+  );
+
+  const assistants = team.filter(
+    (m) => m.roleClass === 'ra'
+  );
+
+  const students = team.filter(
+    (m) => m.roleClass === 'student'
+  );
+
+  const renderMembers = (members) =>
+    members.map((m) => (
+      <div className={`member${m.lead ? ' lead' : ''}`} key={m.name}>
+        <div className="m-photo">
+          {m.photo ? (
+            <img src={m.photo} alt={m.name} />
+          ) : (
+            <span className="initials">{m.initials}</span>
+          )}
+        </div>
+
+        <div className="m-body">
+          <span
+            className={`m-role${m.roleClass ? ' ' + m.roleClass : ''}`}
+          >
+            {m.role}
+          </span>
+
+          <h3>{m.name}</h3>
+
+          <p className="aff">
+            {m.aff.map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < m.aff.length - 1 && <br />}
+              </span>
+            ))}
+          </p>
+        </div>
+      </div>
+    ));
+
   return (
     <section className="section-pad bg-paper" id="team">
       <div className="wrap">
+
         <div className="sec-head reveal">
           <span className="eyebrow">People</span>
           <h2>The implementing team.</h2>
           <p>
-            A multidisciplinary team from the Department of Computer Science &amp;
+            A multidisciplinary team from the Department of Computer Science &
             Engineering and the Medical Center, Jahangirnagar University.
           </p>
         </div>
 
-        <div className="team-grid stagger">
-          {team.map((m) => (
-            <div className={`member${m.lead ? ' lead' : ''}`} key={m.name}>
-              <div className="m-photo">
-                {m.photo ? (
-                  <img src={m.photo} alt={m.name} />
-                ) : (
-                  <span className="initials">{m.initials}</span>
-                )}
-              </div>
-              <div className="m-body">
-                <span className={`m-role${m.roleClass ? ' ' + m.roleClass : ''}`}>
-                  {m.role}
-                </span>
-                <h3>{m.name}</h3>
-                <p className="aff">
-                  {m.aff.map((line, i) => (
-                    <span key={i}>
-                      {line}
-                      {i < m.aff.length - 1 && <br />}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="team-section">
+          <h3 className="group-title">
+            Principal Investigator & Co-Investigators
+          </h3>
+
+          <div className="team-grid investigators">
+            {renderMembers(investigators)}
+          </div>
         </div>
+
+        <div className="team-section">
+          <h3 className="group-title">
+            Research Assistants
+          </h3>
+
+          <div className="team-grid assistants">
+            {renderMembers(assistants)}
+          </div>
+        </div>
+
+        <div className="team-section">
+          <h3 className="group-title">
+            Master's Research Students
+          </h3>
+
+          <div className="team-grid students">
+            {renderMembers(students)}
+          </div>
+        </div>
+
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export const team = [
   {
     initials: 'AKA',
     role: 'Principal Investigator',
-    roleClass: 'pi',
+    roleClass: 'Pi',
     name: 'Prof. Dr. Md Abul Kalam Azad',
     aff: ['Professor, Dept. of CSE,', 'Jahangirnagar University'],
     lead: true,
@@ -21,7 +21,7 @@ export const team = [
   {
     initials: 'SB',
     role: 'Co-PI · 1',
-    roleClass: 'copi',
+    roleClass: 'CoPi',
     name: 'Ms. Sarnali Basak',
     aff: ['Associate Professor, Dept. of CSE,', 'Jahangirnagar University'],
     photo: sarnali,
@@ -29,7 +29,7 @@ export const team = [
   {
     initials: 'SR',
     role: 'Co-PI · 2',
-    roleClass: 'copi',
+    roleClass: 'CoPi',
     name: 'Dr. Md. Shamsur Rahman',
     aff: ['Chief Medical Officer (CMO),', 'Medical Center, JU'],
     photo: shamsur,
@@ -37,7 +37,7 @@ export const team = [
   {
     initials: 'RAD',
     role: 'Research Assistant',
-    roleClass: '',
+    roleClass: 'RA',
     name: 'Rakib Ahmed Diptho',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
     photo: rakib,
@@ -45,7 +45,7 @@ export const team = [
   {
     initials: 'SHC',
     role: 'Research Assistant',
-    roleClass: '',
+    roleClass: 'RA',
     name: 'Safiul Haque Chowdhury',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
     photo: safiul,
@@ -53,7 +53,7 @@ export const team = [
   {
     initials: 'MAAM',
     role: 'Masters Research Student',
-    roleClass: '',
+    roleClass: 'Student',
     name: 'Md. Abdullah Al Mamun',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
     photo: mamun,
@@ -61,7 +61,7 @@ export const team = [
   {
     initials: 'SH',
     role: 'Masters Research Student',
-    roleClass: '',
+    roleClass: 'Student',
     name: 'Md. Shakhawat Hosen',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
     photo: sakhawat,
