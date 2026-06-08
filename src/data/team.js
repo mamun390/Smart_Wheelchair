@@ -1,5 +1,7 @@
 // Team members. To add a real photo, set `photo` to an imported image
 // (e.g. import azad from '../assets/azad.jpg') and pass it in here.
+import mamun from '../assets/mamun.jpg';
+import rakib from '../assets/rakib.jpeg';
 export const team = [
   {
     initials: 'AKA',
@@ -32,7 +34,7 @@ export const team = [
     roleClass: '',
     name: 'Rakib Ahmed Diptho',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
-    photo: null,
+    photo: rakib,
   },
   {
     initials: 'SHC',
@@ -48,7 +50,7 @@ export const team = [
     roleClass: '',
     name: 'Md. Abdullah Al Mamun',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
-    photo: null,
+    photo: mamun,
   },
   {
     initials: 'SH',
