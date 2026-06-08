@@ -2,6 +2,12 @@
 // (e.g. import azad from '../assets/azad.jpg') and pass it in here.
 import mamun from '../assets/mamun.jpg';
 import rakib from '../assets/rakib.jpeg';
+import shamsur from '../assets/shamsur.jpg';
+import sarnali from '../assets/sarnali.jpeg';
+import safiul from '../assets/Safiul.png';
+import kalam from '../assets/kalam.png';
+import sakhawat from '../assets/sakhawat.png';
+
 export const team = [
   {
     initials: 'AKA',
@@ -10,7 +16,7 @@ export const team = [
     name: 'Prof. Dr. Md Abul Kalam Azad',
     aff: ['Professor, Dept. of CSE,', 'Jahangirnagar University'],
     lead: true,
-    photo: null,
+    photo: kalam,
   },
   {
     initials: 'SB',
@@ -18,7 +24,7 @@ export const team = [
     roleClass: 'copi',
     name: 'Ms. Sarnali Basak',
     aff: ['Associate Professor, Dept. of CSE,', 'Jahangirnagar University'],
-    photo: null,
+    photo: sarnali,
   },
   {
     initials: 'SR',
@@ -26,7 +32,7 @@ export const team = [
     roleClass: 'copi',
     name: 'Dr. Md. Shamsur Rahman',
     aff: ['Chief Medical Officer (CMO),', 'Medical Center, JU'],
-    photo: null,
+    photo: shamsur,
   },
   {
     initials: 'RAD',
@@ -42,7 +48,7 @@ export const team = [
     roleClass: '',
     name: 'Safiul Haque Chowdhury',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
-    photo: null,
+    photo: safiul,
   },
   {
     initials: 'MAAM',
@@ -58,6 +64,6 @@ export const team = [
     roleClass: '',
     name: 'Md. Shakhawat Hosen',
     aff: ['Dept. of CSE,', 'Jahangirnagar University'],
-    photo: null,
+    photo: sakhawat,
   },
 ];
