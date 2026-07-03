@@ -32,8 +32,8 @@ export default function LabOffice() {
             <div className="pat" />
             <div className="glyph">
               <WheelchairIcon />
-              <b>Intelligent Wheelchair Lab</b>
-              <span>CSE Department · Jahangirnagar University</span>
+              <b>AI Assistive Rehabilitation Technology Lab</b>
+              <span>Department of Computer Science & Engineering  <br />Jahangirnagar University</span>
             </div>
           </div>
 

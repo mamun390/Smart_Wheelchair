@@ -9,7 +9,7 @@ import kalam from '../assets/kalam.png';
 import sakhawat from '../assets/sakhawat.png';
 
 export const team = [
-  {
+   {
     initials: 'AKA',
     role: 'Principal Investigator',
     roleClass: 'Pi',
@@ -17,6 +17,7 @@ export const team = [
     aff: ['Professor, Dept. of CSE,', 'Jahangirnagar University'],
     lead: true,
     photo: kalam,
+    website: 'https://juniv.edu/teachers/makazad',
   },
   {
     initials: 'SB',
@@ -25,6 +26,7 @@ export const team = [
     name: 'Ms. Sarnali Basak',
     aff: ['Associate Professor, Dept. of CSE,', 'Jahangirnagar University'],
     photo: sarnali,
+    website: 'https://juniv.edu/teachers/sarnali.cse',
   },
   {
     initials: 'SR',
@@ -33,6 +35,7 @@ export const team = [
     name: 'Dr. Md. Shamsur Rahman',
     aff: ['Chief Medical Officer (CMO),', 'Medical Center, JU'],
     photo: shamsur,
+    website: 'https://juniv.edu/center/medical-centre#',
   },
   {
     initials: 'RAD',
