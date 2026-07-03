@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HomeIcon, MailIcon, GlobeIcon } from './Icons.jsx';
+import { HomeIcon, MailIcon, GlobeIcon, WhatsAppIcon } from './Icons.jsx';
 
 // ───────────────────────────────────────────────────────────────────────────
 // 1) Paste the access key you get from https://web3forms.com here.
@@ -106,6 +106,26 @@ export default function Contact() {
               </span>
             </div>
           </div>
+
+          <div className="ci-row">
+  <span className="ic">
+    <WhatsAppIcon />
+  </span>
+
+  <div>
+    <b>WhatsApp</b>
+    <span>
+      <a
+        href="https://wa.me/8801885926041"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="email-link"
+      >
+        8801885926041
+      </a>
+    </span>
+  </div>
+</div>
 
           <div className="ci-row">
             <span className="ic">
