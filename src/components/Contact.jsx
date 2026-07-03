@@ -43,7 +43,8 @@ export default function Contact() {
               <span>
                 Principal Investigator — Dept. of CSE, JU
                 <br />
-                (add project email here)
+                makazad@juniv.edu 
+                
               </span>
             </div>
           </div>
