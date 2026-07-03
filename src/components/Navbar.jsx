@@ -26,7 +26,7 @@ export default function Navbar() {
         <a href="#home" className="brand">
           <img src={juLogo} alt="Jahangirnagar University logo" />
           <span className="bt">
-            <b>AI Assistive Technology Lab</b>
+            <b>AI Assistive Rehabilitation Technology Lab</b>
             <span>Jahangirnagar University · CSE</span>
           </span>
         </a>
