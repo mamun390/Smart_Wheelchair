@@ -32,14 +32,20 @@ export default function Team() {
             {m.role}
           </span>
 
-          <h3><a
-    href={member.website}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="member-name"
-  >
-    {member.name}
-  </a></h3>
+          <h3>
+  {m.website ? (
+    <a
+      href={m.website}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="member-name"
+    >
+      {m.name}
+    </a>
+  ) : (
+    m.name
+  )}
+</h3>
 
           <p className="aff">
             {m.aff.map((line, i) => (
