@@ -16,10 +16,22 @@ export const pubCategories = [
     items: [],
   },
   {
-    id: 'journal',
-    label: 'Journal',
-    empty: 'Journal articles from this project will be listed here once published.',
-    items: [],
+  id: 'journal',
+  label: 'Journal',
+  empty: 'Journal articles from this project will be listed here once published.',
+  items: [
+    {
+      title:
+        'Gesture-Based Navigation of Smart Wheelchairs: A Review of Current Trends and Future Directions',
+      authors:
+        'Rakib Ahammed Diptho, Safiul Haque Chowdhury, Md. Abdullah Al Mamun, Md. Shakhawat Hosen, Md. Shamsur Rahman, Sarnali Basak, Md. Abul Kalam Azad',
+      venue:
+        'Technologies, Volume 14, Issue 7, Article 430, MDPI, 2026',
+      status: 'pub',
+      statusLabel: 'Published',
+      link: 'https://www.mdpi.com/2227-7080/14/7/430',
+    },
+  ],
   },
   {
     id: 'conf',
