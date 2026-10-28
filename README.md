@@ -24,7 +24,8 @@ src/
     Hero.jsx              hero + on-load stagger
     About.jsx             overview + "at a glance" card
     Research.jsx          6 research-focus cards
-    Team.jsx              team grid (reads data/team.js)
+    Team.jsx              team grid (reads data/team.js), cards open profile pages
+    Profile.jsx           member profile page content
     LabOffice.jsx         lab & office
     Publications.jsx      tabbed publications (reads data/publications.js)
     Activities.jsx        timeline (reads data/activities.js)
@@ -37,14 +38,26 @@ src/
     publications.js       add publications here
   hooks/
     useScrollReveal.js    scroll-in animations
-  App.jsx                 assembles the sections
-  main.jsx                entry point
+  App.jsx                 assembles the home page sections
+  main.jsx                home page entry point
+  profile-main.jsx        profile page entry point
+team/<slug>/index.html    one page per member (generated, see below)
+scripts/make-profile-pages.mjs  generates the team/<slug>/ pages
   styles.css              all styles + design tokens
 ```
 
 ## Common edits
 - **Team photos:** in `src/data/team.js`, import an image and set `photo`,
   e.g. `import azad from '../assets/azad.jpg'` then `photo: azad`.
+- **Member profiles:** each member in `src/data/team.js` has a `slug` and
+  optional `title`, `bio`, `emails`, `phones`, `office`, `scholar`,
+  `researchgate`, `links`,
+  `education`, `interests` and `publications`. Empty fields are hidden.
+  Project publications are added to each profile automatically.
+- **Profile pages:** each member has a real page at `team/<slug>/`, which
+  opens in the same tab when their card is clicked. After adding, removing
+  or renaming a member in `team.js`, run `npm run pages` to regenerate the
+  `team/` folders (delete the old folder of a removed member by hand).
 - **Add a publication:** push an item into the relevant category's `items`
   array in `src/data/publications.js` (template is in the file comments).
 - **Contact email:** update the placeholder in `src/components/Contact.jsx`.

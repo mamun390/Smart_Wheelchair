@@ -15,9 +15,11 @@ export default function Team() {
 
   const renderMembers = (members) =>
     members.map((m) => (
-      <div
+      <a
+        href={`team/${m.slug}/`}
         className={`member${m.lead ? ' lead' : ''}`}
         key={m.name}
+        aria-label={`View profile of ${m.name}`}
       >
         <div className="m-photo">
           {m.photo ? (
@@ -28,24 +30,11 @@ export default function Team() {
         </div>
 
         <div className="m-body">
-          <span className={`m-role ${m.roleClass}`}>
+          <span className={`m-role ${m.roleClass.toLowerCase()}`}>
             {m.role}
           </span>
 
-          <h3>
-  {m.website ? (
-    <a
-      href={m.website}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="member-name"
-    >
-      {m.name}
-    </a>
-  ) : (
-    m.name
-  )}
-</h3>
+          <h3 className="member-name">{m.name}</h3>
 
           <p className="aff">
             {m.aff.map((line, i) => (
@@ -55,8 +44,10 @@ export default function Team() {
               </span>
             ))}
           </p>
+
+          <span className="m-more">View profile →</span>
         </div>
-      </div>
+      </a>
     ));
 
   return (

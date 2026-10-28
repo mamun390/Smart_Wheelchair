@@ -734,3 +734,81 @@ footer{background:var(--forest);color:#cfe2d6;padding:4rem 0 2rem}
   color: #5BC99B;
   text-decoration: underline;
 }
+/* ---------- TEAM CARD → PROFILE LINK ---------- */
+a.member{color:inherit;text-decoration:none;cursor:pointer}
+a.member:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+.member .m-more{display:inline-block;margin-top:.7rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--emerald);transition:transform .25s}
+.member:hover .m-more{transform:translateX(4px)}
+.member:hover .member-name{color:var(--emerald)}
+
+/* ---------- PROFILE PAGE ---------- */
+.profile-hero{position:relative;overflow:hidden;color:#eaf3ec;padding:2.6rem 0 3.4rem;background:radial-gradient(120% 120% at 12% -10%,#1c5c3f 0%,#143d2b 42%,#0c2a1f 100%)}
+.profile-hero .wrap{position:relative;z-index:2}
+.back-link{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);margin-bottom:2rem;text-decoration:none}
+.back-link:hover{color:#fff}
+.ph-inner{display:grid;grid-template-columns:220px 1fr;gap:2.6rem;align-items:center}
+.ph-photo{width:220px;aspect-ratio:1/1;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(150deg,var(--green),var(--forest));border:3px solid rgba(169,220,191,.45);box-shadow:var(--shadow-lg)}
+.ph-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph-photo .initials{display:grid;place-items:center;height:100%;font-family:var(--serif);font-size:3.4rem;font-weight:600;color:#fff}
+.ph-text .m-role{background:rgba(255,255,255,.1);color:var(--mint);padding:.28rem .65rem;border-radius:6px}
+.ph-text .m-role.pi{background:var(--mint);color:var(--forest)}
+.ph-text h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,3rem);line-height:1.08;color:#fff;margin:.6rem 0 .5rem;letter-spacing:-.01em}
+.ph-title{font-size:1.05rem;color:#d6eadc}
+.ph-aff{font-size:.9rem;color:var(--mint-soft);margin-top:.2rem}
+.ph-links{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.pill{display:inline-flex;align-items:center;gap:.45rem;padding:.48rem .9rem;border-radius:999px;font-size:.82rem;font-weight:500;color:#fff;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(169,220,191,.35);transition:background .2s,border-color .2s,transform .2s;word-break:break-all}
+.pill:hover{background:var(--mint);color:var(--forest);border-color:var(--mint);transform:translateY(-2px)}
+.pill svg{width:15px;height:15px;flex:0 0 auto}
+
+.profile-body{display:grid;grid-template-columns:1fr 340px;gap:2.6rem;align-items:start}
+.pb-block{margin-bottom:2.4rem}
+.pb-block .eyebrow{display:block;margin-bottom:.8rem}
+.pb-block p{color:var(--ink-soft);font-size:1.03rem;margin-bottom:.9rem}
+.pb-block p.muted{color:var(--muted);font-size:.95rem}
+.pb-side{display:flex;flex-direction:column;gap:1.3rem;position:sticky;top:100px}
+.pb-side .side-line{color:var(--ink);font-size:.95rem;font-weight:500}
+.edu{list-style:none;display:flex;flex-direction:column;gap:.85rem}
+.edu li{display:flex;flex-direction:column;padding-bottom:.75rem;border-bottom:1px dashed var(--line)}
+.edu li:last-child{border-bottom:0;padding-bottom:0}
+.edu b{font-size:.93rem;color:var(--ink)}
+.edu span{font-size:.84rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem}
+.tag{font-size:.8rem;padding:.32rem .7rem;border-radius:999px;background:var(--sage);color:var(--green);border:1px solid var(--line)}
+
+.profile-nav{display:flex;justify-content:space-between;gap:1rem;margin-top:1.5rem;padding-top:1.6rem;border-top:1px solid var(--line)}
+.profile-nav a{text-decoration:none;display:flex;flex-direction:column;gap:.15rem;color:var(--forest)}
+.profile-nav a.right{text-align:right}
+.profile-nav small{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.profile-nav b{font-family:var(--serif);font-weight:600;font-size:1.02rem}
+.profile-nav a:hover b{color:var(--emerald)}
+.profile-missing{min-height:50vh}
+
+@media(max-width:900px){
+  .profile-body{grid-template-columns:1fr}
+  .pb-side{position:static}
+}
+@media(max-width:640px){
+  .ph-inner{grid-template-columns:1fr;gap:1.4rem}
+  .ph-photo{width:150px}
+  .profile-nav{flex-direction:column}
+  .profile-nav a.right{text-align:left}
+}
+
+/* profile: contact, publication type badges */
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+.contact-list li{display:flex;gap:.7rem;align-items:flex-start;font-size:.9rem;color:var(--ink);line-height:1.45;word-break:break-word}
+.contact-list a{color:var(--green);text-decoration:none;font-weight:500}
+.contact-list a:hover{color:var(--emerald);text-decoration:underline}
+.contact-list .ci{flex:0 0 30px;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--sage);color:var(--green)}
+.contact-list .ci svg{width:15px;height:15px}
+.pb-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.pb-head .eyebrow{margin-bottom:0}
+.pb-count{font-family:var(--mono);font-size:.66rem;font-weight:600;background:var(--forest);color:var(--mint);padding:.12rem .5rem;border-radius:999px}
+.ptype{flex:0 0 auto;align-self:flex-start;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .6rem;border-radius:999px;font-weight:600;background:var(--sage-2);color:var(--green);border:1px solid var(--mint-soft)}
+.ptype.project{background:var(--forest);color:var(--mint);border-color:var(--forest)}
+.ptype.conference{background:#e8f1ff;color:#2c5aa0;border-color:#c6dbf7}
+.ptype.dataset{background:#fff6e3;color:#9a7414;border-color:#ecd9a6}
+.btn-ghost-dark{display:inline-block;margin-top:.6rem;padding:.6rem 1.1rem;border-radius:999px;border:1px solid var(--line);color:var(--forest);font-weight:600;font-size:.88rem;text-decoration:none;transition:background .2s,border-color .2s}
+.btn-ghost-dark:hover{background:var(--sage);border-color:var(--mint-soft)}
+@media(max-width:640px){.pub-item{flex-wrap:wrap}.ptype{order:-1;margin-left:auto}}
+.profile-body.no-side{grid-template-columns:1fr}

@@ -31,6 +31,16 @@ export const pubCategories = [
       statusLabel: 'Published',
       link: 'https://www.mdpi.com/2227-7080/14/7/430',
     },
+    {
+      title:
+        'Hand Landmark Detection using YOLO26n for Gesture-Based Smart Wheelchair Navigation',
+      authors:
+        'Rakib Ahammed Diptho, Safiul Haque Chowdhury, Md. Abdullah Al Mamun, Md. Shakhawat Hosen, Md. Shamsur Rahman, Sarnali Basak, Md. Abul Kalam Azad',
+      venue:
+        'Jahangirnagar University Journal of Electronics and Computer Science, Volume 17, 2026',
+      status: 'pub',
+      statusLabel: 'Published',
+    },
   ],
   },
   {
@@ -38,6 +48,23 @@ export const pubCategories = [
     label: 'Conference',
     empty: 'Conference papers and proceedings will be listed here once accepted.',
     items: [],
+  },
+  {
+    id: 'dataset',
+    label: 'Datasets',
+    empty: 'Datasets released by the project will be listed here.',
+    items: [
+      {
+        title:
+          'HandGesture-5G: A Multi-View, Multi-Illumination Smartphone Image Dataset of Five Static Hand Gestures for Robust Computer Vision Research',
+        authors:
+          'Rakib Ahammed Diptho, Safiul Haque Chowdhury, Md. Abdullah Al Mamun, Md. Shakhawat Hosen, Md. Shamsur Rahman, Sarnali Basak, Md. Abul Kalam Azad',
+        venue: 'Mendeley Data, V2, 2026',
+        status: 'pub',
+        statusLabel: 'Dataset',
+        link: 'https://doi.org/10.17632/wj25crzdbm.2',
+      },
+    ],
   },
   {
     id: 'preprint',

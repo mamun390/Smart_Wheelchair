@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "pages": "node scripts/make-profile-pages.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",

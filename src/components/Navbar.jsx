@@ -10,7 +10,7 @@ const LINKS = [
   ['Activities', '#activities'],
 ];
 
-export default function Navbar() {
+export default function Navbar({ home = '' }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <header className={`nav${scrolled ? ' scrolled' : ''}`}>
       <div className="wrap nav-inner">
-        <a href="#home" className="brand">
+        <a href={`${home}#home`} className="brand">
           <img src={juLogo} alt="Jahangirnagar University logo" />
           <span className="bt">
             <b>AI Assistive Rehabilitation Technology Lab</b>
@@ -43,11 +43,11 @@ export default function Navbar() {
 
         <nav className={`nav-links${open ? ' open' : ''}`}>
           {LINKS.map(([label, href]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)}>
+            <a key={href} href={`${home}${href}`} onClick={() => setOpen(false)}>
               {label}
             </a>
           ))}
-          <a href="#contact" className="nav-cta" onClick={() => setOpen(false)}>
+          <a href={`${home}#contact`} className="nav-cta" onClick={() => setOpen(false)}>
             Contact
           </a>
         </nav>

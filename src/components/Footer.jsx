@@ -4,7 +4,7 @@ import icsetepLogo from '../assets/icsetep_header.png';
 import ugclogo from '../assets/ugc.png';
 import gov from '../assets/gov.jpeg';
 
-export default function Footer() {
+export default function Footer({ home = '' }) {
   return (
     <footer>
       <div className="wrap">
@@ -22,11 +22,11 @@ export default function Footer() {
 
           <div className="f-col">
             <h4>Navigate</h4>
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#team">Team</a>
-            <a href="#publications">Publications</a>
-            <a href="#activities">Activities</a>
+            <a href={`${home}#about`}>About</a>
+            <a href={`${home}#research`}>Research</a>
+            <a href={`${home}#team`}>Team</a>
+            <a href={`${home}#publications`}>Publications</a>
+            <a href={`${home}#activities`}>Activities</a>
           </div>
 
           <div className="f-col">
