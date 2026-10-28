@@ -196,13 +196,18 @@ export const team = [
     title: 'Research Assistant, Department of Computer Science and Engineering',
     bio: [
       'Safiul Haque Chowdhury is a Research Assistant in the Department of Computer Science and Engineering at Jahangirnagar University and a member of IEEE. His work focuses on explainable and privacy-preserving machine learning, particularly for healthcare, and on gesture-controlled robotic platforms.',
+      'He is an Editorial Member of the Journal of Artificial Intelligence and Digital Health and a Senior Researcher at SIResearchLab, Bangladesh University.',
     ],
     emails: ['4169safiulhaque@juniv.edu'],
     office: JU_CSE_OFFICE,
     scholar: 'https://scholar.google.com/citations?user=8prvggIAAAAJ',
-    researchgate: '',
+    researchgate: 'https://www.researchgate.net/profile/Safiul-Haque-Chowdhury',
     links: [
       { label: 'ORCID', url: 'https://orcid.org/0009-0003-7098-2476' },
+      { label: 'IEEE Xplore', url: 'https://ieeexplore.ieee.org/author/878700928448992' },
+      { label: 'GitHub', url: 'https://github.com/safiulhaquechowdhury' },
+      { label: 'JAID Editorial Board', url: 'https://www.confmeets.com/journals/jaid/editorial_member/safiul-haque-chowdhury-271134' },
+      { label: 'SIResearchLab', url: 'https://siresearchlab.bu.edu.bd/team' },
     ],
     education: [
       { degree: 'M.Sc. in Computer Science', inst: 'Jahangirnagar University', year: '2025–2026' },
