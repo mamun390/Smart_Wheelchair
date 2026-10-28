@@ -12,8 +12,65 @@ export const pubCategories = [
   {
     id: 'review',
     label: 'Under Review',
-    empty: 'Manuscripts currently under review will appear here. No submissions are under review yet — check back soon.',
-    items: [],
+    empty: 'Manuscripts currently under review will appear here.',
+    items: [
+      {
+        title:
+          'Useful Until Visibility Shifts: The Visible Marker Count as Information and Shortcut on the MoCap Hand Postures Benchmark',
+        venue: 'Conference paper',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'A Low-Cost IoT-Based Touchless Vision-Guided Mobile Robot with Real-Time Firmware-Level Obstacle Protection',
+        venue: 'Conference paper',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'Quantifying Occlusion Tolerance and Safety in MediaPipe-Based Hand Gesture Recognition for Smart Wheelchair Interfaces',
+        venue: 'Conference paper',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'Disentangling Frame-Level and Temporal Evidence in HMM-Based Hand Gesture Recognition via Matched Transition Ablation',
+        venue: 'Conference paper',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'Interpretable Real-Time Static Hand Gesture Recognition Using Transfer Learning, Landmark-Guided Localization and XAI',
+        venue: 'Conference paper',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'Latency, Accuracy and Edge-Enforced Safety in an IoT Gesture-Control Architecture for Low-Cost Mobile Robots',
+        venue: 'Journal article',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'When Marker Count Becomes a Shortcut: Visibility Shifts and Confidence Failure in Motion-Capture Hand Posture Recognition',
+        venue: 'Journal article',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+      {
+        title:
+          'Safety Aware Knowledge Extraction from Motion Capture Hand Posture Data for Subject Independent Assistive Command Control',
+        venue: 'Journal article',
+        status: 'review',
+        statusLabel: 'Under Review',
+      },
+    ],
   },
   {
   id: 'journal',
