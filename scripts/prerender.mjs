@@ -4,8 +4,8 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync, rmSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { SITE, readTeam, personSchema, jsonLd } from './team-meta.mjs';
 
-const SITE = 'https://icsetepd67-juniv.org';
 const dist = resolve('dist');
 const ssr = await import(pathToFileURL(resolve('.ssr/entry-server.js')).href);
 
@@ -18,6 +18,18 @@ const fill = (file, html) => {
 
 fill(resolve(dist, 'index.html'), ssr.renderHome());
 console.log('prerendered index.html');
+
+// List every team member on the home page so Google links each name to the lab.
+const home = resolve(dist, 'index.html');
+const members = readTeam().map(personSchema);
+const teamLd = `  <script type="application/ld+json">${jsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'ResearchOrganization',
+  '@id': `${SITE}/#lab`,
+  member: members,
+})}</script>\n</head>`;
+writeFileSync(home, readFileSync(home, 'utf8').replace('</head>', () => teamLd));
+console.log(`team schema: ${members.length} members`);
 
 const urls = [`${SITE}/`];
 const teamDir = resolve(dist, 'team');
