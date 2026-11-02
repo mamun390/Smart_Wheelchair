@@ -6,6 +6,7 @@ import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import Profile from './components/Profile.jsx';
 import './styles.css';
+import './a11y.css';
 
 const root = document.getElementById('root');
 const slug = root.dataset.slug;
