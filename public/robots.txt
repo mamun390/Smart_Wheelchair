@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://icsetepd67-juniv.org/sitemap.xml
