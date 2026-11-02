@@ -24,6 +24,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm install --no-save sharp@0.33.5
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
