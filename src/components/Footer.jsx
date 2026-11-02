@@ -21,7 +21,7 @@ export default function Footer({ home = '' }) {
           </div>
 
           <div className="f-col">
-            <h4>Navigate</h4>
+            <h3>Navigate</h3>
             <a href={`${home}#about`}>About</a>
             <a href={`${home}#research`}>Research</a>
             <a href={`${home}#team`}>Team</a>
@@ -30,7 +30,7 @@ export default function Footer({ home = '' }) {
           </div>
 
           <div className="f-col">
-            <h4>Project</h4>
+            <h3>Project</h3>
             <p>RDG: ৳ 2,19,18,000/=</p>
             <p>Duration: 2026–2027</p>
             <p>Parent: ICSETEP</p>
@@ -46,11 +46,11 @@ export default function Footer({ home = '' }) {
               <span>Asian Development Bank (ADB)</span>
             </div>
             <div className="fblk">
-              <img src={gov} alt="GoV of BD" />
+              <img src={gov} alt="Government of Bangladesh" />
               <span>Government of Bangladesh (GoB)</span>
             </div>
             <div className="fblk">
-              <img src={ugclogo} alt="UGC" />
+              <img src={ugclogo} alt="University Grants Commission of Bangladesh" />
               <span>University Grants Commission</span>
             </div>
           </div>
