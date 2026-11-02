@@ -33,6 +33,14 @@ for (const m of readTeam()) {
     '@type': 'ProfilePage',
     url: `${SITE}/team/${m.slug}/`,
     mainEntity: personSchema(m),
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Smart Wheelchair Lab', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 2, name: 'Team', item: `${SITE}/#team` },
+        { '@type': 'ListItem', position: 3, name: m.name, item: `${SITE}/team/${m.slug}/` },
+      ],
+    },
   })}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
