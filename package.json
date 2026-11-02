@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "pages": "node scripts/make-profile-pages.mjs",
-    "build": "vite build",
+    "build": "node scripts/make-profile-pages.mjs && vite build && vite build --ssr src/entry-server.jsx --outDir .ssr --base / && node scripts/prerender.mjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
