@@ -38,6 +38,8 @@ export default function Publications() {
             {pubCategories.map((c) => (
               <button
                 key={c.id}
+                role="tab"
+                aria-selected={active === c.id}
                 className={`tab${active === c.id ? ' active' : ''}`}
                 onClick={() => setActive(c.id)}
               >
