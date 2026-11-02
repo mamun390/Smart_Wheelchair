@@ -42,8 +42,9 @@ export const team = [
     pubName: 'Md. Abul Kalam Azad',
     title: 'Professor and Chairman, Department of Computer Science and Engineering',
     bio: [
-      'Prof. Dr. Md Abul Kalam Azad is Professor and Chairman of the Department of Computer Science and Engineering at Jahangirnagar University. He holds doctoral degrees from Jahangirnagar University and the University of Ulsan, South Korea, and a master\'s degree in Information Technology from KTH Royal Institute of Technology, Sweden.',
-      'His research spans wireless sensor and cognitive radio networks, cloud and edge computing, data science and blockchain. He leads the Gesture-based Intelligent Wheelchair sub-project under ICSETEP.',
+      'Dr. Md. Abul Kalam Azad is a Professor and currently serving as the Chairman of the Department of Computer Science and Engineering at Jahangirnagar University, bringing over 26 years of extensive teaching, leadership, and research experience to the institution. Additionally, he is leading the prestigious ICSETEP-D-67 project under the finance of ADB as a Principal Investigator.',
+      'He began his academic journey by earning his B.Sc. in Electronics and Computer Science from Jahangirnagar University (1993-1996), where he secured the 1st Class 1st position and was awarded the prestigious President Gold Medal. He subsequently completed his M.Sc. in Information Technology with distinction marks at the Royal Institute of Technology (KTH), Sweden (2006-2008). Demonstrating a deep commitment to advanced research, Dr. Azad holds two Ph.D. degrees: one in Cognitive Radio Networks from Jahangirnagar University (2021) and another in Wireless Sensor Networks from the University of Ulsan, South Korea (2022), supported by the ICT Fellowship and Hyundai Heavy Industries.',
+      'His research expertise focuses on wireless communications, machine learning, and computer security, resulting in a strong publication record of over 32 articles in internationally recognized journals. Throughout his tenure at Jahangirnagar University, where he was promoted to Full Professor in 2017, he has guided the department\'s academic vision, pioneered transmission protocols, improved network infrastructures, and mentored the next generation of engineers and researchers.',
     ],
     emails: ['makazad@juniv.edu', 'akazad.ju@gmail.com'],
     phones: ['+880 1885-926041'],
@@ -87,8 +88,8 @@ export const team = [
     pubName: 'Sarnali Basak',
     title: 'Associate Professor, Department of Computer Science and Engineering',
     bio: [
-      'Sarnali Basak is an Associate Professor in the Department of Computer Science and Engineering at Jahangirnagar University. She holds an MSc in Cognitive Science from the School of Informatics, University of Edinburgh.',
-      'Her research covers artificial intelligence, machine learning, neural computation and the Internet of Things, with recent work on medical image analysis and gesture-based assistive systems.',
+      'Sarnali Basak is an Associate Professor in the Department of Computer Science and Engineering at Jahangirnagar University with over 14 years of academic and research experience. She earned her B.Sc. (2005–2009) and M.Sc. (2010–2012) in Computer Science and Engineering from Jahangirnagar University, and later completed a second M.Sc. in Cognitive Science at the University of Edinburgh (2015–2016) as a Commonwealth Scholar.',
+      'Specializing in artificial intelligence, cognitive science, and human-computer interaction, she has a robust publication record featuring research on machine learning applications, cyberbullying detection, and predictive modeling in healthcare. She notably serves as a Co-Principal Investigator (Co-PI) under the ADB-supported ICSETEP initiative, where she leads impactful, technology-driven societal projects, including the development of a gesture-based intelligent wheelchair to assist physically challenged individuals in Bangladesh.',
     ],
     emails: ['sarnali.cse@juniv.edu', 'sarnali.cse@gmail.com'],
     phones: ['+880 2224491045-51 (PABX)'],
@@ -133,6 +134,10 @@ export const team = [
     slug: 'shamsur-rahman',
     pubName: 'Md. Shamsur Rahman',
     title: 'Chief Medical Officer, Medical Center, Jahangirnagar University',
+    bio: [
+      'Dr. Md. Shamsur Rahman is a Bangladeshi physician who serves as the Chief Medical Officer (Acting) and Director of the Medical Centre at Jahangirnagar University in Savar, Dhaka. He received his medical training at Mymensingh Medical College, one of the oldest and most respected medical institutions in Bangladesh.',
+      'At Jahangirnagar University, Dr. Rahman leads the Medical Centre, which delivers healthcare to the university\'s students, faculty, and staff through its nursing service, pharmacy (medicine supply), and laboratory (pathological testing) services. As the institution\'s senior medical officer, he oversees day-to-day clinical care and campus health responses, and he has been cited in national media in his official capacity on matters of student and staff wellbeing, including campus medical emergencies and seasonal health concerns.',
+    ],
   },
   {
     initials: 'RAD',
@@ -145,8 +150,8 @@ export const team = [
     pubName: 'Rakib Ahammed Diptho',
     title: 'Research Assistant, Department of Computer Science and Engineering',
     bio: [
-      'Rakib Ahammed Diptho is a researcher and lecturer whose work centres on computer vision and applied machine learning for healthcare and assistive technology.',
-      'He works across the full research pipeline, from dataset construction and model development to manuscript preparation, and serves as a peer reviewer for Neural Computing and Applications, Frontiers in Artificial Intelligence, Frontiers in Medical Technology, Frontiers in Oncology and MDPI Diagnostics.',
+      'Rakib Ahammed Diptho completed his Higher Secondary Certificate (HSC) from Dhaka Residential Model College, Mohammadpur, Dhaka. After completing his secondary education, he earned a B.Sc. in Computer Science and Engineering from BRAC University with excellent academic performance. Following his undergraduate studies, he completed an M.Sc. in Computer Science and Engineering from Jahangirnagar University.',
+      'He is an Artificial Intelligence (AI) researcher and is currently serving as a full-time Research Assistant in the Department of Computer Science and Engineering at Jahangirnagar University (ADB-supported ICSETEP). His research interests span artificial intelligence, machine learning, computer vision, explainable artificial intelligence (XAI), predictive modeling, and intelligent systems, with applications in healthcare, agriculture, transportation, and environmental sustainability. He has authored numerous peer-reviewed publications in internationally recognized journals and conference proceedings and serves as a reviewer for several international scientific journals.',
     ],
     emails: ['3788diptho@juniv.edu', 'dipthobracu02@gmail.com'],
     office: JU_CSE_OFFICE,
@@ -195,9 +200,8 @@ export const team = [
     pubName: 'Safiul Haque Chowdhury',
     title: 'Research Assistant, Department of Computer Science and Engineering',
     bio: [
-      'Safiul Haque Chowdhury is a Research Assistant in the Department of Computer Science and Engineering at Jahangirnagar University and a member of IEEE. His work focuses on explainable and privacy-preserving machine learning, particularly for healthcare, and on gesture-controlled robotic platforms.',
-      'He is an Editorial Member of the Journal of Artificial Intelligence and Digital Health and a Senior Researcher at SIResearchLab, Bangladesh University.',
-      'He serves as a peer reviewer for journals across major publishers. Elsevier: Applied Soft Computing, Informatics and Health, Engineering Applications of Artificial Intelligence, Array, Franklin Open, Information Sciences, Knowledge-Based Systems, Informatics in Medicine Unlocked, Fuel, Computer Networks, Measurement, Biomedical Signal Processing and Control, Computer Methods and Programs in Biomedicine, Computational Toxicology, Global Pediatrics, Intelligence-Based Medicine, International Journal of Disaster Risk Reduction, Information and Software Technology, Marine Pollution Bulletin, Theriogenology, Decoding Infection and Transmission, Artificial Intelligence in Geosciences, Smart Agricultural Technology, Biomedical Engineering Advances, Computer Methods and Programs in Biomedicine Update, Immunology, MethodsX, Physics and Chemistry of the Earth, Big Data Research, Energy Nexus and Microbiological Research. Springer Nature: Discover Artificial Intelligence, Scientific Reports, Discover Computing, Artificial Intelligence Review, BMC Medical Informatics and Decision Making, BMC Medical Imaging, BMC Public Health, Discover Applied Sciences, Discover Public Health and The Journal of Supercomputing. Wiley: Engineering Reports, Expert Systems, Journal of Nursing Scholarship and Veterinary Medicine and Science. MDPI: Diagnostics, Entropy, FinTech and Future Internet. Other journals: PLOS One, Digital Health (SAGE), Frontiers in Medicine, Women’s Health (SAGE), Computer Methods in Biomechanics and Biomedical Engineering (Taylor & Francis), Engineering, Technology & Applied Science Research, International Research Journal of Multidisciplinary Technovation, Journal of BioData Mining and Academia Quantum.',
+      'Safiul Haque Chowdhury is a Research Assistant (Grade 9) under the ADB-supported ICSETEP in the Department of Computer Science and Engineering at Jahangirnagar University and an accomplished Bangladeshi researcher specializing in machine learning, deep learning, and Explainable AI (XAI) for predictive healthcare informatics. Having earned his Bachelor of Science in Computer Science and Engineering from Bangladesh University, his academic and professional efforts focus on developing advanced predictive models for conditions such as diabetes, stroke, and liver disease.',
+      'Alongside his studies, Safiul serves as a Full-Time Research Assistant at Jahangirnagar University under the ADB-supported ICSETEP initiative, has valuable industry experience as a former Machine Learning Engineer and Team Lead at Orion Informatics, and actively supports the global scientific ecosystem as an editorial board member of the Journal of Artificial Intelligence and Digital Health as well as a peer reviewer for prominent international journals.',
     ],
     emails: ['4169safiulhaque@juniv.edu'],
     office: JU_CSE_OFFICE,
@@ -237,7 +241,8 @@ export const team = [
     pubName: 'Abdullah Al Mamun',
     title: 'M.Sc. Research Student, Department of Computer Science and Engineering',
     bio: [
-      'Md. Abdullah Al Mamun is an M.Sc. research student in the Department of Computer Science and Engineering at Jahangirnagar University, supervised by Prof. Dr. Md Abul Kalam Azad. His thesis work covers hand gesture recognition and Bangla natural language processing.',
+      'Md. Abdullah Al Mamun completed his Higher Secondary Certificate (HSC) from Nilphamari Government College, Bangladesh. He received his B.Sc. degree in Computer Science and Engineering from Jahangirnagar University, Bangladesh, and is currently pursuing his M.Sc. degree in Computer Science and Engineering at the same institution.',
+      'He has conducted research in the areas of the Internet of Things (IoT) and Blockchain Technology and is currently engaged in research focusing on Artificial Intelligence, Machine Learning, Robotics, and IoT. His research interests include Artificial Intelligence, Machine Learning, Robotics, the Internet of Things (IoT), Blockchain Technology, and Computer Vision.',
     ],
     emails: ['mamun.stu2019@juniv.edu', 'mamun.jucse29@gmail.com'],
     phones: ['+880 1764-901306'],
@@ -265,7 +270,8 @@ export const team = [
     pubName: 'Shakhawat Hosen',
     title: 'M.Sc. Research Student, Department of Computer Science and Engineering',
     bio: [
-      'Md. Shakhawat Hosen is an M.Sc. research student in the Department of Computer Science and Engineering at Jahangirnagar University. His thesis studies the robustness of MediaPipe-based hand gesture recognition under occlusion.',
+      'Md. Shakhawat Hosen completed his Higher Secondary Certificate (HSC) from Comilla Government College, Cumilla, Bangladesh. He received his B.Sc. degree in Computer Science and Engineering from Jahangirnagar University, Dhaka, Bangladesh, and is currently pursuing an M.Sc. degree in Computer Science and Engineering at the same institution.',
+      'His research interests include artificial intelligence, machine learning, computer vision, deep learning, and the Internet of Things (IoT), with a particular focus on intelligent vision systems and robust hand tracking under occlusion. In addition to his research, he has professional experience in backend software development and has solved over 800 algorithmic problems on competitive programming platforms.',
     ],
     office: JU_CSE_OFFICE,
     scholar: 'https://scholar.google.com/citations?hl=en&user=Gq5Gq6UAAAAJ',
