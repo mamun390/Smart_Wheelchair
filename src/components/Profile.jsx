@@ -105,7 +105,7 @@ export default function Profile({ slug }) {
         <div className={`wrap profile-body${hasSide ? '' : ' no-side'}`}>
           <div className="pb-main">
             {m.bio && m.bio.length > 0 && (
-              <div className="pb-block">
+              <div className="pb-block pb-bio">
                 <span className="eyebrow">Biography</span>
                 {m.bio.map((para, i) => (
                   <p key={i}>{para}</p>
