@@ -40,7 +40,7 @@ export const inception = {
       talk: 'Research & Reality: Robotics, IoT and the Global Frontier',
       speakers: [
         { name: 'Redwan Ferdous', role: 'Managing Director, FronTech Limited' },
-        { name: 'AI Assistive Rehabilitation Technology Lab', role: 'Research team, ICSETEP D-67' },
+        { name: 'Safiul Haque Chowdhury', role: 'Research Assistant, AI Assistive Rehabilitation Technology Lab, ICSETEP D-67, Dept. of CSE, JU' },
       ],
     },
   ],
