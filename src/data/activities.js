@@ -5,6 +5,11 @@ export const activities = [
     desc: 'Formation of the research team, procurement of hardware, and establishment of the prototyping lab and clinical collaboration framework.',
   },
   {
+    date: '14 July 2026',
+    title: 'Inception Workshop',
+    desc: 'Formal launch of the sub-project at the Department of CSE, Jahangirnagar University, with the Vice-Chancellor as chief guest, followed by two technical sessions.',
+  },
+  {
     date: '2026 · Q2–Q3',
     title: 'Gesture Dataset & Recognition Models',
     desc: 'Collection of gesture data and development of real-time recognition models for head, hand and body controls.',
