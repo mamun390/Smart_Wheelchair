@@ -5,6 +5,7 @@ import About from './components/About.jsx';
 import Research from './components/Research.jsx';
 import Team from './components/Team.jsx';
 import LabOffice from './components/LabOffice.jsx';
+import Events from './components/Events.jsx';
 import Publications from './components/Publications.jsx';
 import Activities from './components/Activities.jsx';
 import Contact from './components/Contact.jsx';
@@ -35,6 +36,7 @@ export default function App() {
         <Research />
         <Team />
         <LabOffice />
+        <Events />
         <Publications />
         <Activities />
         <Contact />
