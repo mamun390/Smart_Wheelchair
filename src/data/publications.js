@@ -86,7 +86,7 @@ export const pubCategories = [
         'Technologies, Volume 14, Issue 7, Article 430, MDPI, 2026',
       status: 'pub',
       statusLabel: 'Published',
-      link: 'https://www.mdpi.com/2227-7080/14/7/430',
+      link: 'https://doi.org/10.3390/technologies14070430',
     },
     {
       title:
