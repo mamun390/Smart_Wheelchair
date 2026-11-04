@@ -31,8 +31,8 @@ export default function Hero() {
         <p className="lead reveal hero-r">
           A research initiative of the AI Assistive Rehabilitation Technology
           Lab (Smart Wheelchair Lab), Department of Computer Science &amp;
-          Engineering (CSE), Jahangirnagar University (JU) — building an affordable,
-          gesture-controlled smart wheelchair to restore mobility and
+          Engineering (CSE), Jahangirnagar University (JU), to build an affordable,
+          gesture-controlled smart wheelchair that restores mobility and
           independence for physically challenged people across Bangladesh.
         </p>
 
