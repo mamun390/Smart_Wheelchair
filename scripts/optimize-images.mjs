@@ -79,3 +79,43 @@ for (const file of walk(dist).filter((p) => p.endsWith('.html'))) {
   if (out !== html) writeFileSync(file, out);
 }
 console.log('og-image.png: 1200x630 social preview');
+
+// 5) Favicons in the formats Google Search and browsers look for:
+//    /favicon.ico (16/32/48), /favicon-48x48.png, /favicon-192x192.png and
+//    /apple-touch-icon.png, all linked with absolute URLs from every page.
+const icon = (size) => sharp(logoBuf).resize(size, size, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toBuffer();
+const icoSizes = [16, 32, 48];
+const icoPngs = await Promise.all(icoSizes.map(icon));
+const header = Buffer.alloc(6 + 16 * icoSizes.length);
+header.writeUInt16LE(0, 0);
+header.writeUInt16LE(1, 2);
+header.writeUInt16LE(icoSizes.length, 4);
+let offset = header.length;
+icoSizes.forEach((s, i) => {
+  const e = 6 + 16 * i;
+  header.writeUInt8(s, e);
+  header.writeUInt8(s, e + 1);
+  header.writeUInt16LE(1, e + 4);
+  header.writeUInt16LE(32, e + 6);
+  header.writeUInt32LE(icoPngs[i].length, e + 8);
+  header.writeUInt32LE(offset, e + 12);
+  offset += icoPngs[i].length;
+});
+writeFileSync(join(dist, 'favicon.ico'), Buffer.concat([header, ...icoPngs]));
+writeFileSync(join(dist, 'favicon-48x48.png'), await icon(48));
+writeFileSync(join(dist, 'favicon-192x192.png'), await icon(192));
+writeFileSync(join(dist, 'apple-touch-icon.png'), await sharp(logoBuf).resize(180, 180, { fit: 'contain', background: '#ffffff' }).png().toBuffer());
+const iconTags = [
+  '<link rel="icon" href="/favicon.ico" sizes="48x48" />',
+  '<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />',
+  '<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />',
+  '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />',
+].join('\n  ');
+for (const file of walk(dist).filter((p) => p.endsWith('.html'))) {
+  const html = readFileSync(file, 'utf8');
+  const out = html
+    .replace(/[ \t]*<link rel="apple-touch-icon"[^>]*>\n?/g, '')
+    .replace(/<link rel="icon"[^>]*>/, () => iconTags);
+  if (out !== html) writeFileSync(file, out);
+}
+console.log('favicons: favicon.ico, 48px, 192px, apple-touch-icon');
