@@ -13,7 +13,7 @@ const ITEMS = [
   },
   {
     Icon: HeartIcon,
-    title: 'Clinical Testing — JU Medical Center',
+    title: 'Clinical Testing at JU Medical Center',
     desc: 'User trials and safety evaluation conducted in collaboration with the University Medical Center.',
   },
 ];
