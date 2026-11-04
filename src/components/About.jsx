@@ -10,16 +10,16 @@ export default function About() {
           <p>
             Millions of people in Bangladesh live with mobility impairments, yet
             access to affordable, adaptive wheelchairs remains severely limited.
-            Conventional powered wheelchairs depend on joysticks that many users
-            — particularly those with limited hand strength or upper-limb
-            conditions — find difficult or impossible to operate.
+            Conventional powered wheelchairs depend on joysticks that many users,
+            particularly those with limited hand strength or upper-limb
+            conditions, find difficult or impossible to operate.
           </p>
           <p>
             This project develops an{' '}
             <strong>intelligent wheelchair driven by intuitive human gestures.</strong>{' '}
             Using computer vision, embedded sensing, and machine learning, the
             system interprets head, hand, and body gestures in real time to
-            navigate safely — reducing physical effort while improving safety
+            navigate safely, reducing physical effort while improving safety
             through obstacle detection and assisted control.
           </p>
           <p>
