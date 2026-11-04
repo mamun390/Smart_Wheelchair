@@ -32,6 +32,7 @@ function allPublications(m) {
   return out;
 }
 
+const doiOf = (p) => p.doi || ((p.link || '').match(/doi\.org\/(.+)$/) || [])[1];
 const telHref = (phone) => `tel:${phone.replace(/\(.*\)/, '').replace(/[^\d+]/g, '')}`;
 
 export default function Profile({ slug }) {
@@ -137,6 +138,11 @@ export default function Profile({ slug }) {
                         {(p.venue || p.year) && (
                           <div className="pvenue">
                             {[p.venue, p.year].filter(Boolean).join(' · ')}
+                          </div>
+                        )}
+                        {doiOf(p) && (
+                          <div className="pdoi">
+                            DOI: <a href={`https://doi.org/${doiOf(p)}`} target="_blank" rel="noreferrer">{doiOf(p)}</a>
                           </div>
                         )}
                       </div>

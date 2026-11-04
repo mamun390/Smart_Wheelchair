@@ -16,6 +16,8 @@ const EMPTY_ICONS = {
   workshop: WorkshopIcon,
 };
 
+const doiOf = (p) => p.doi || ((p.link || '').match(/doi\.org\/(.+)$/) || [])[1];
+
 export default function Publications() {
   const [active, setActive] = useState(pubCategories[0].id);
   const current = pubCategories.find((c) => c.id === active);
@@ -75,6 +77,11 @@ export default function Publications() {
                     </div>
                     {p.authors && <div className="pauth">{p.authors}</div>}
                     {p.venue && <div className="pvenue">{p.venue}</div>}
+                    {doiOf(p) && (
+                      <div className="pdoi">
+                        DOI: <a href={`https://doi.org/${doiOf(p)}`} target="_blank" rel="noreferrer">{doiOf(p)}</a>
+                      </div>
+                    )}
                   </div>
                   {p.statusLabel && (
                     <span className={`status ${p.status || 'pub'}`}>
