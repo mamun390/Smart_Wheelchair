@@ -4,12 +4,12 @@ import { HomeIcon, MailIcon, GlobeIcon, WhatsAppIcon } from './Icons.jsx';
 // ───────────────────────────────────────────────────────────────────────────
 // 1) Paste the access key you get from https://web3forms.com here.
 //    Messages are delivered to the EMAIL ADDRESS you used when creating the key.
-//    That address is your "inbox" — change the recipient by making a new key.
+//    That address is your "inbox"; change the recipient by making a new key.
 // ───────────────────────────────────────────────────────────────────────────
 const WEB3FORMS_ACCESS_KEY = 'c0061ddc-cbb4-4014-99d3-288832703ca4';
 
 // Checks the *format* of an email (e.g. name@domain.com).
-// It CANNOT confirm the address actually exists — that needs a confirmation
+// It CANNOT confirm the address actually exists; that needs a confirmation
 // link. For a contact form, checking the format is the normal standard.
 const isValidEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
 
@@ -63,7 +63,7 @@ export default function Contact() {
 
   const note =
     status === 'success'
-      ? "Thanks! Your message has been sent — we'll get back to you soon."
+      ? "Thanks! Your message has been sent. We'll get back to you soon."
       : status === 'error'
       ? 'Something went wrong. Please try again, or email us directly.'
       : status === 'sending'
@@ -98,7 +98,7 @@ export default function Contact() {
             <div>
               <b>Email</b>
               <span>
-                Principal Investigator — Dept. of CSE, JU
+                Principal Investigator, Dept. of CSE, JU
                 <br />
                 <a href="mailto:makazad@juniv.edu" className="email-link">
                   makazad@juniv.edu
