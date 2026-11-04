@@ -55,7 +55,7 @@ export default function Research() {
           <h2>What we are building and investigating.</h2>
           <p>
             The project spans gesture recognition, intelligent navigation, and
-            human-centred clinical evaluation — engineered for real-world
+            human-centred clinical evaluation, engineered for real-world
             deployment at low cost.
           </p>
         </div>
