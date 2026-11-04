@@ -6,6 +6,7 @@ const LINKS = [
   ['Research', '#research'],
   ['Team', '#team'],
   ['Lab & Office', '#lab'],
+  ['Events', '#events'],
   ['Publications', '#publications'],
   ['Activities', '#activities'],
 ];
